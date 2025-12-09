@@ -1,0 +1,20 @@
+:root{
+  --bg:#f6f8fb;
+  --card:#fff;
+  --muted:#666;
+  --accent:#0b5ed7;
+  --radius:12px;
+  --container:16px;
+  --max-width:1100px;
+  --gov-blue:#2c3e50;
+  --gov-accent:#0b5ed7;
+  font-family: "Inter", "Noto Sans Telugu", Arial, sans-serif;
+}
+
+*{box-sizing:border-box}
+html,body,#root{height:100%; margin:0; background:var(--bg); font-family:var(--font-family); color:#222;}
+.app-container{max-width:var(--max-width); margin:0 auto; padding:20px;}
+h1,h2,h3{margin:0 0 8px 0}
+.subtitle{color:var(--muted); margin:6px 0 16px}
+.primary-btn{background:var(--gov-accent); color:#fff; border:none; padding:10px 14px; border-radius:8px; cursor:pointer}
+.lead{color:#333; margin-bottom:8px}

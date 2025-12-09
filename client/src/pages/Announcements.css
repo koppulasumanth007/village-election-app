@@ -1,0 +1,75 @@
+.announcements-container {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.ann-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #1a1a1a;
+}
+
+.ann-list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ann-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px 20px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  border-left: 5px solid #1d72b8;
+}
+
+.ann-icon {
+  font-size: 22px;
+  margin-top: 4px;
+}
+
+.ann-text {
+  white-space: pre-line;
+  font-size: 16px;
+  line-height: 1.45;
+  color: #333;
+}
+
+/* Animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeInUp 0.45s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  .ann-card {
+    padding: 14px;
+  }
+
+  .ann-title {
+    font-size: 24px;
+  }
+
+  .ann-text {
+    font-size: 15px;
+  }
+}
